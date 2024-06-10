@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 
 # Function to initialize the text classification pipeline with the specified model
-@st.cache_resource
+# @st.cache_resource
 def get_pipeline(model_name):
     return pipeline("text-classification", model=model_name, top_k=None)
 
